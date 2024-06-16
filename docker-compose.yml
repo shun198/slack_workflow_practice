@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  app:
+    container_name: app
+    build:
+      context: .
+      dockerfile: containers/python/Dockerfile
+    volumes:
+      - ./application:/code
+    ports:
+      - "8000:8000"
+      # デバッグ用ポート
+      - "8080:8080"
+    command: sh -c "/usr/local/bin/entrypoint.sh"
+    env_file:
+      - .env
+
