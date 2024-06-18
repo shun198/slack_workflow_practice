@@ -12,7 +12,7 @@ services:
       - "8000:8000"
       # デバッグ用ポート
       - "8080:8080"
-    command: sh -c "/usr/local/bin/entrypoint.sh"
+    command: poetry run python app.py
     env_file:
       - .env
 
