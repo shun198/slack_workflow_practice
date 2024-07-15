@@ -17,4 +17,3 @@ down:
 format:
 	$(RUN_POETRY) black .
 	$(RUN_POETRY) isort .
-

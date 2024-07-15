@@ -15,4 +15,3 @@ services:
     command: poetry run python app.py
     env_file:
       - .env
-
