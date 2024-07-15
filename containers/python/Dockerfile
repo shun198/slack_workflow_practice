@@ -8,4 +8,3 @@ COPY application/pyproject.toml /code/
 # Initialize python project with Poetry
 RUN pip install --upgrade pip && pip install poetry
 RUN poetry install
-
